@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity-Unversity</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="amity.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- headerX -->
+        <div class="row header sticky-top" style="background-color: #10437a;">
+            <div class="col-sm-2 ">
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                <script>
+                    function showTime() {
+                        var date = new Date();
+                        var h = date.getHours(); // 0 - 23
+                        var m = date.getMinutes(); // 0 - 59
+                        var s = date.getSeconds(); // 0 - 59
+                        var session = "AM";
+
+                        if (h == 0) {
+                            h = 12;
+                        }
+
+                        if (h > 12) {
+                            h = h - 12;
+                            session = "PM";
+                        }
+
+                        h = (h < 10) ? "0" + h : h;
+                        m = (m < 10) ? "0" + m : m;
+                        s = (s < 10) ? "0" + s : s;
+
+                        var time = h + ":" + m + ":" + s + " " + session;
+                        document.getElementById("MyClockDisplay").innerText = time;
+                        document.getElementById("MyClockDisplay").textContent = time;
+
+                        setTimeout(showTime, 1000);
+
+                    }
+
+                    showTime();
+                </script>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3 p-2">
+                <!-- icons -->
+                <i class="fa-brands fa-facebook fs-3 icon mt-1"></i>
+                <i class="fa-brands fa-instagram fs-3 icon"></i>
+                <i class="fa-brands fa-linkedin fs-3 icon"></i>
+                <i class="fa-brands fa-square-x-twitter fs-3 icon"></i>
+                <!-- icons -->
+            </div>
+            <div class="col-sm-3 regbt p-2">
+                <!-- registration button -->
+                <div class="registrationbt" data-aos="fade-right">
+                    <a href="registration.html"><button class="btn btn-danger"> <b>Registration here</b> <b>!</b></button></a>
+                </div>
+                <!-- registration button -->
+            </div>
+            <div class="col-sm-3 p-2" data-aos="fade-left">
+                <div class="registrationbt">
+                    <a href="login.html"><button class="btn btn-danger"><b>login here</b> <b>!</b></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- headerX -->
+
+
+        <!-- navbar -->
+        <div class="row ">
+
+            <div class="col-sm-2">
+                <span><img src="images/logo2.png" alt="" class="logo"></span>
+            </div>
+            <div class="col-sm-4 hg2">
+                <span class="logotxt">Amity University</span>
+                <br>
+                <span id="logotxt2"> A Best University For learning</span>
+            </div>
+
+
+
+            <div class="col-sm-6 Nav mt-5 ">
+                <div class="om">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Link1</a></li>
+                            <li><a href="">Result</a></li>
+                            <li><a href="">Contact-us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+
+
+        <!-- main -->
+<div class="row">
+    <div class="col-sm-4 mn"></div>
+    <div class="col-sm-8 mn"></div>
+</div>
+
+        <!-- main -->
+
+        <!-- footer -->
+        <div class="row  mt-1">
+            <div class="col-sm-4 ft ">
+                <div class="areabox"><img src="images/logo2.png" alt="" class="logox"></div>
+                <span id="logoxtxt">Amity University</span>
+                <div class="parentbox ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero asperiores veniam atque! Atque
+                    temporibus repellat fugit! Ad molestiae itaque earum, sint a cum recusandae quidem omnis non
+                    quaerat. Temporibus aliquam corrupti officiis ipsa, vel nesciunt aperiam rem dolorem doloremque
+                    suscipit labore ducimus totam odio. Ex numquam architecto eaque ullam repudiandae!
+                </div>
+                <div class="iconsm6 mt-3 ">
+                    <i class="fa-brands fa-facebook fs-1 icon mt-2"></i>
+                    <i class="fa-brands fa-instagram fs-1 icon"></i>
+                    <i class="fa-brands fa-linkedin fs-1 icon"></i>
+                    <i class="fa-brands fa-square-x-twitter fs-1 icon"></i>
+                </div>
+            </div>
+            <div class="col-sm-4 ft">
+                <span id="flinks">Some_Links</span><br>
+              <div class="ftlinks mt-5">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house fs-4"></i>   Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-book-bookmark fs-4"></i>  Courses</a></li>
+                    <li><a href=""><i class="fa-solid fa-square-poll-vertical fs-4"></i>  Result</a></li>
+                    <li><a href=""><i class="fa-solid fa-newspaper"></i>   News & Events</a></li>
+                    <li><a href=""><i class="fa-solid fa-address-card"></i>  Contact-us</a></li>
+                    <li><a href=""><i class="fa-solid fa-globe fs-4"></i>  Services</a></li>
+                    <li><a href=""><i class="fa-solid fa-wallet fs-4"></i>   Fees-Information</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 ft">
+                <span id="flinks">About_us</span><br>
+                <div class="address mb-2">
+                   
+                    <ul>
+                        <li><a href=" "><i class="fa-solid fa-phone fs-4" style="color: #fb8500;"></i> +91 8522158225</a></li>
+                      <li><a href=" "> Amity University <br> mohali Punjab Lorem <br>0ipsum dolor sit amet <br> consectetur adipisicing <br> Quas, aliquid.</a></li>
+                    
+                       <li> <input type="search" class="search mt-3" placeholder="Put Your Query.. "><i class="fa-solid fa-paper-plane fs-3" id="send" style="color: #fb8500;"></i>
+                       </li>
+                    </ul>
+                   
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- footer -->
+
+    </div>
+</body>
+</html>

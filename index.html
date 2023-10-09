@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity-Unversity</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="amity.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo2.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- headerX -->
+        <div class="row header sticky-top" style="background-color: #10437a;">
+            <div class="col-sm-2 ">
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                <script>
+                    function showTime() {
+                        var date = new Date();
+                        var h = date.getHours(); // 0 - 23
+                        var m = date.getMinutes(); // 0 - 59
+                        var s = date.getSeconds(); // 0 - 59
+                        var session = "AM";
+
+                        if (h == 0) {
+                            h = 12;
+                        }
+
+                        if (h > 12) {
+                            h = h - 12;
+                            session = "PM";
+                        }
+
+                        h = (h < 10) ? "0" + h : h;
+                        m = (m < 10) ? "0" + m : m;
+                        s = (s < 10) ? "0" + s : s;
+
+                        var time = h + ":" + m + ":" + s + " " + session;
+                        document.getElementById("MyClockDisplay").innerText = time;
+                        document.getElementById("MyClockDisplay").textContent = time;
+
+                        setTimeout(showTime, 1000);
+
+                    }
+
+                    showTime();
+                </script>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3 p-2">
+                <!-- icons -->
+                <i class="fa-brands fa-facebook fs-3 icon mt-1"></i>
+                <i class="fa-brands fa-instagram fs-3 icon"></i>
+                <i class="fa-brands fa-linkedin fs-3 icon"></i>
+                <i class="fa-brands fa-square-x-twitter fs-3 icon"></i>
+                <!-- icons -->
+            </div>
+            <div class="col-sm-3 regbt p-2">
+                <!-- registration button -->
+                <div class="registrationbt" data-aos="fade-right">
+                    <a href="registration.html"><button class="btn btn-danger"> <b>Registration here</b> <b>!</b></button></a>
+                </div>
+                <!-- registration button -->
+            </div>
+            <div class="col-sm-3 p-2" data-aos="fade-left">
+                <div class="registrationbt">
+                    <a href="login.html"><button class="btn btn-danger"><b>login here</b> <b>!</b></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- headerX -->
+
+
+        <!-- navbar -->
+        <div class="row ">
+
+            <div class="col-sm-2">
+                <span><img src="images/logo2.png" alt="" class="logo"></span>
+            </div>
+            <div class="col-sm-4 hg2">
+                <span class="logotxt">Amity University</span>
+                <br>
+                <span id="logotxt2"> A Best University For learning</span>
+            </div>
+
+
+
+            <div class="col-sm-6 Nav mt-5 ">    
+                <div class="om">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="">Link1</a></li>
+                            <li><a href="">Result</a></li>
+                            <li><a href="contactus.html">Contact-us</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+
+        <!-- Slider -->
+        <div class="row  slider2">
+            <div class="col-sm-12 slider">
+                <div id="slide">
+
+                    <div class="item" style="background-image:url('images/sl1.jpg')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image:url('images/sl2.jpg')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image:url('images/sl3.jpg')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image:url('images/sl4.webp')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image:url('images/sl5.jpg')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image:url('images/sl6.jpg')">
+
+                        <div class="content">
+                            <div class="name">Amity University</div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, eum.</div>
+                            <button>See more.</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fa-solid fa-circle-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+                <script src="slider.js"></script>
+
+
+            </div>
+        </div>
+        <!-- Slider -->
+
+
+        <!-- About University Section -->
+        <div class="row toping" style="background-color: #10437a;">
+            <h2><span class="titoo">About University.</span></h2>
+            <div class="col-sm-6 about  ">
+                <div class="card" data-aos="fade-right">
+                    <img src="images/sl1.jpg" alt="" height="430px" width="550px">
+                    <div class="content">
+                        <p class="title"><span id="cardtxt">Amity University</span><br><span id="cardtxt2"> A Best
+                                University of india. </span></p>
+                        <ul class="sci">
+                            <li>
+                                <a href="#">
+                                    <svg class="fa-brands fa-facebook " width="20" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg class="fa-brands fa-twitter" width="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg class="fa-brands fa-linkedin-in" width="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg class="fa-brands fa-instagram" width="24" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5  about">
+                <div class="areatx" data-aos="fade-left">
+                    <span class="abtxt">
+                        <span style="color:#fb8500;font-size:35px; font-weight:bold" data-aos="fade-right">Amity
+                            University</span> Punjab (Mohali) is the eleventh university established by the
+                        not-for-profit Amity Foundation. Being set up as a multi-disciplinary university, it offers 90+
+                        UG and PG degree programmes along with Doctoral programmes. The university is proposed to be the
+                        hub of hi-end research, with extensive collaborations with top global universities to facilitate
+                        international exposure for its students and research opportunities for faculty.The 40-acre
+                        hi-tech campus is just 10 minutes away from Chandigarh International Airport. Amity University
+                        Punjab endeavors to emerge as a global knowledge hub, attracting and nurturing the most
+                        brilliant students who share our mission to change the world, together .
+                    </span>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-sm-1"></div>
+
+        </div>
+        <!-- About University Section -->
+
+
+        <!-- Services Of Colleges  -->
+        <div class="row toping p-2 mt-1 " style="background-color: #10437a;">
+            <h2 class="txtm mt-1" style="text-align: center;">Our Courses.</h2>
+            <div class="col-sm-12">
+                <marquee scrollamount="12" onmousemove="this.stop()" onmouseout="this.start()">
+                    <div class="box">ANIMATION | GAME DESIGN</div>
+                    <div class="box">COMPUTER APPLICATIONS</div>
+                    <div class="box">ARCHITECTURE</div>
+                    <div class="box"> ACTING</div>
+                    <div class="box">BIOTECH</div>
+                    <div class="box">ENGINEERING</div>
+                    <div class="box">FASHION</div>
+                    <div class="box">FILM & TV PRODUCTION</div>
+                    <div class="box">MICROBIAL SCIENCES</div>
+                    <div class="box">INTERIOR DESIGN</div>
+                    <div class="box">FINE ARTS</div>
+                    <div class="box">TRAVEL & TOURISM </div>
+                    <div class="box">PSYCHOLOGY</div>
+
+                </marquee>
+            </div>
+
+
+        </div>
+        <!-- Services Of Colleges  -->
+
+
+        <!-- Top Placements -->
+        <div class="row  toping mt-1" style="background-color:#10437a">
+
+            <div class="col-sm-12 p-4 plcm ">
+                <h2 style="text-align: center; font-size:40px;font-weight:bold; color:white;">Top Placements.</h2>
+                <div class="areax">
+
+
+
+                    <div class="boxx"><span class="boxxtxt" id="p1"><b>0</b></span><br><span><b id="xtt">Placements Every
+                                Year</b></span></div>
+                    <div class="boxx"><span class="boxxtxt" id="p2"><b>0</b></span><br><span><b id="xtt" >last Year
+                                Placements.</b></span></div>
+                    <div class="boxx"><span class="boxxtxt" id="p3"><b>000+</b></span><br><span><b id="xtt" >+Companies</b></span>
+                    </div>
+                    <div class="boxx"><span class="boxxtxt" ><b>20 Lakh-2CR</b></span><br><span><b id="xtt">Per/Anum
+                                Package</b></span></div>
+
+
+                    <br>
+
+                    <marquee scrollamount="12" onmousemove="this.stop()" onmouseout="this.start()">
+                        <div class="boxbx mt-3"><img src="images/pl (1).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (2).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (3).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (4).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (5).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (6).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (7).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (8).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (9).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (10).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (11).jpg" alt=""></div>
+                        <div class="boxbx mt-3"><img src="images/pl (12).jpg" alt=""></div>
+
+                    </marquee>
+
+                </div>
+                <script>
+                    function numCounter(tagId, maxCount, speed) {
+                        var initialNumber = 0;
+                        function counter() {
+                            document.getElementById(tagId).innerHTML = initialNumber;
+                            ++initialNumber;
+                        }
+                        var counterDelay = setInterval(counter, speed);
+                        function totalTime() {
+                            clearInterval(counterDelay);
+                        }
+                        var totalPeriod = speed * (maxCount);
+                        setTimeout(totalTime, totalPeriod);
+                    }
+
+                    numCounter("p1", 1250, 5);
+                    numCounter("p2", 900, 5);
+                    numCounter("p3", 540, 5);
+
+                </script>
+
+
+
+
+            </div>
+
+        </div>
+        <!-- Top Placements -->
+
+
+
+        <!-- Mentors of Our Colleges -->
+        <div class="row toping mt-1" style="background-color: #10437a;">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 srk ">
+            <span style="font-size: 35px; color:#fb8500; position:relative; font-weight:bold; font-style:italic;">Our Mentors</span>
+                <div class="mentor_ar mb-1">
+                   
+                    <div class="card69">
+                        <img src="images/tony.jpg" alt="" class="imgstp" >
+                        <div class="author">Tony Stark</div>
+                     </div>
+
+                     <div class="card69">
+                        <img src="images/steave.jpg" alt="" class="imgstp" >
+                        <div class="author ms-2">Captain</div>
+                     </div>
+
+
+                     <div class="card69">
+                        <img src="images/tony.jpg" alt="" class="imgstp" >
+                        <div class="author">Tony Stark</div>
+                     </div>
+
+
+                     <div class="card69">
+                        <img src="images/steave.jpg" alt="" class="imgstp" >
+                        <div class="author">Captain</div>
+                     </div>
+
+                     <div class="card69">
+                        <img src="images/pro.jpg" alt="" class="imgstp" >
+                        <div class="author">Professor</div>
+                     </div>
+
+                     
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!-- Mentors of Our Colleges -->
+
+
+        <!-- Feedback of College Students. -->
+        <div class="row mt-1 toping" style="background-color: #10437a;">
+            <div class="col-sm-12">
+                <span style="font-size: 35px; color:#fb8500; position:relative;left:120px;top:10px;  ;font-weight:bold; font-style:italic;">Feedback</span>
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-slide>
+                  <img src="images/pro.jpg" class="testimg" />
+                  <br>
+                  <div class="testitext mb-1">
+                    <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                     <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img src="images/pro.jpg" class="testimg" />
+                    <br>
+                    <div class="testitext mb-1">
+                      <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                       <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                  </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                    <img src="images/pro.jpg" class="testimg" />
+                    <br>
+                    <div class="testitext mb-1">
+                      <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                       <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                  </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                    <img src="images/pro.jpg" class="testimg" />
+                    <br>
+                    <div class="testitext mb-1">
+                      <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                       <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                  </div>
+                  </swiper-slide>
+               
+                <swiper-slide>
+                    <img src="images/pro.jpg" class="testimg" />
+                    <br>
+                    <div class="testitext mb-1">
+                      <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                       <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                  </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                    <img src="images/pro.jpg" class="testimg" />
+                    <br>
+                    <div class="testitext mb-1">
+                      <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi iusto, unde voluptatibus id, natus eaque dolore saepe et alias officia nesciunt voluptas soluta veritatis autem architecto a est mollitia."</span>
+                       <br><span style="float:right;">"Professor-"<br>University Professor</span>  
+                  </div>
+                  </swiper-slide>
+
+
+              </swiper-container>
+            
+              <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+            </div>
+            
+        </div>
+        <!-- Feedback of College Students. -->
+
+        <!-- Footer -->
+        <div class="row  mt-1 toping">
+            <div class="col-sm-4 ft ">
+                <div class="areabox"><img src="images/logo2.png" alt="" class="logox"></div>
+                <span id="logoxtxt">Amity University</span>
+                <div class="parentbox ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero asperiores veniam atque! Atque
+                    temporibus repellat fugit! Ad molestiae itaque earum, sint a cum recusandae quidem omnis non
+                    quaerat. Temporibus aliquam corrupti officiis ipsa, vel nesciunt aperiam rem dolorem doloremque
+                    suscipit labore ducimus totam odio. Ex numquam architecto eaque ullam repudiandae!
+                </div>
+                <div class="iconsm6 mt-3 ">
+                    <i class="fa-brands fa-facebook fs-1 icon mt-2"></i>
+                    <i class="fa-brands fa-instagram fs-1 icon"></i>
+                    <i class="fa-brands fa-linkedin fs-1 icon"></i>
+                    <i class="fa-brands fa-square-x-twitter fs-1 icon"></i>
+                </div>
+            </div>
+            <div class="col-sm-4 ft">
+                <span id="flinks">Some_Links</span><br>
+              <div class="ftlinks mt-5">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house fs-4"></i>   Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-book-bookmark fs-4"></i>  Courses</a></li>
+                    <li><a href=""><i class="fa-solid fa-square-poll-vertical fs-4"></i>  Result</a></li>
+                    <li><a href=""><i class="fa-solid fa-newspaper"></i>   News & Events</a></li>
+                    <li><a href=""><i class="fa-solid fa-address-card"></i>  Contact-us</a></li>
+                    <li><a href=""><i class="fa-solid fa-globe fs-4"></i>  Services</a></li>
+                    <li><a href=""><i class="fa-solid fa-wallet fs-4"></i>   Fees-Information</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 ft">
+                <span id="flinks">About_us</span><br>
+                <div class="address mb-2">
+                   
+                    <ul>
+                        <li><a href=" "><i class="fa-solid fa-phone fs-4" style="color: #fb8500;"></i> +91 8522158225</a></li>
+                      <li><a href=" "> Amity University <br> mohali Punjab Lorem <br>0ipsum dolor sit amet <br> consectetur adipisicing <br> Quas, aliquid.</a></li>
+                    
+                       <li> <input type="search" class="search mt-3" placeholder="Put Your Query.. "><i class="fa-solid fa-paper-plane fs-3" id="send" style="color: #fb8500;"></i>
+                       </li>
+                    </ul>
+                   
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <!-- Copyright & designed -->
+  <div class="row toping sx">
+    <div class="col-sm-12 p-2">
+        <span id="copytxt"> &copy; Copyright & Designed By Mr Harshit Gupta.</span>
+    </div>
+  </div>
+        <!-- Copyright & designed -->
+
+
+        <!-- loader -->
+        
+        <!-- loader -->
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 300,
+                duration: 1000,
+            }); 
+        </script>
+
+    </div>
+</body>
+
+</html>
